@@ -1,3 +1,6 @@
+# gitlab PAT (personal access token)
+variable "gitlab_token" {}
+
 # repository name
 variable "repo_name" {
   default = "example"

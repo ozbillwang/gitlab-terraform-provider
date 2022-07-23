@@ -32,7 +32,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_all_variables"></a> [all\_variables](#input\_all\_variables) | set variables for environment "all" | `map(any)` | <pre>{<br>  "region": "us-west-2"<br>}</pre> | no |
-| <a name="input_gitlab_token"></a> [gitlab\_token](#input\_gitlab\_token) | n/a | `any` | n/a | yes |
+| <a name="input_gitlab_token"></a> [gitlab\_token](#input\_gitlab\_token) | gitlab PAT (personal access token) | `any` | n/a | yes |
 | <a name="input_group_name"></a> [group\_name](#input\_group\_name) | gitlab group name. | `string` | `"example-group"` | no |
 | <a name="input_masked_production_variables"></a> [masked\_production\_variables](#input\_masked\_production\_variables) | n/a | `map(any)` | <pre>{<br>  "password": "cHJvZHVjdGlvbgo="<br>}</pre> | no |
 | <a name="input_masked_staging_variables"></a> [masked\_staging\_variables](#input\_masked\_staging\_variables) | You should not manage credentials in this repo, I put here only for reference | `map(any)` | <pre>{<br>  "password": "c3RhZ2luZwo="<br>}</pre> | no |
