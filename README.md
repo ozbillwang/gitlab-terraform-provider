@@ -32,7 +32,8 @@ No modules.
 |------|-------------|------|---------|:--------:|
 | <a name="input_gitlab_token"></a> [gitlab\_token](#input\_gitlab\_token) | n/a | `any` | n/a | yes |
 | <a name="input_group_name"></a> [group\_name](#input\_group\_name) | n/a | `string` | `"example-group"` | no |
-| <a name="input_masked_staging_variables"></a> [masked\_staging\_variables](#input\_masked\_staging\_variables) | n/a | `map(any)` | <pre>{<br>  "password": "cHJvZHVjdGlvbgo="<br>}</pre> | no |
+| <a name="input_masked_production_variables"></a> [masked\_production\_variables](#input\_masked\_production\_variables) | n/a | `map(any)` | <pre>{<br>  "password": "cHJvZHVjdGlvbgo="<br>}</pre> | no |
+| <a name="input_masked_staging_variables"></a> [masked\_staging\_variables](#input\_masked\_staging\_variables) | You should not manage credentials in this repo, I put here only for reference | `map(any)` | <pre>{<br>  "password": "c3RhZ2luZwo="<br>}</pre> | no |
 | <a name="input_production_variables"></a> [production\_variables](#input\_production\_variables) | n/a | `map(any)` | <pre>{<br>  "environment": "production",<br>  "username": "example_user"<br>}</pre> | no |
 | <a name="input_repo_name"></a> [repo\_name](#input\_repo\_name) | n/a | `string` | `"example"` | no |
 | <a name="input_staging_variables"></a> [staging\_variables](#input\_staging\_variables) | n/a | `map(any)` | <pre>{<br>  "environment": "staging",<br>  "username": "example_user"<br>}</pre> | no |

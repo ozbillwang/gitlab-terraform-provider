@@ -34,7 +34,7 @@ variable "masked_staging_variables" {
   }
 }
 
-variable "masked_staging_variables" {
+variable "masked_production_variables" {
   type = map(any)
 
   default = {
