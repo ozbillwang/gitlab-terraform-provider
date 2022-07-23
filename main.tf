@@ -23,8 +23,6 @@ resource "gitlab_project_variable" "staging_variables" {
   key               = each.key
   value             = each.value
   environment_scope = "staging"
-  protected         = false
-  masked            = false
 }
 
 resource "gitlab_project_variable" "production_variables" {
@@ -33,9 +31,15 @@ resource "gitlab_project_variable" "production_variables" {
   key               = each.key
   value             = each.value
   environment_scope = "production"
-  protected         = false
-  masked            = false
 }
+
+resource "gitlab_project_variable" "all_variables" {
+  for_each = var.all_variables
+  project  = gitlab_project.repository.id
+  key      = each.key
+  value    = each.value
+}
+
 
 # Add masked variables to the project
 resource "gitlab_project_variable" "masked_staging_variables" {
