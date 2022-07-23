@@ -23,3 +23,7 @@ use [terraform-docs](https://terraform-docs.io/) to generate terraform readme fi
 ```
 docker run --rm --volume "$(pwd):/terraform-docs" -u $(id -u) quay.io/terraform-docs/terraform-docs:0.16.0 markdown /terraform-docs | tee README.md
 ```
+
+## todo list
+
+* [use gitlab terraform as terraform backend to save the state file](https://docs.gitlab.com/ee/user/infrastructure/iac/)
